@@ -8,38 +8,33 @@ public class NivelFacil {
 
     void jogar() {
         ArrayList<Integer> numerosAleatorios = new ArrayList<>();
-        ArrayList<Integer> numerosEscolhidos = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite um numero entre 0 e 30: ");
         int numero = sc.nextInt();
 
-        numerosEscolhidos.add(numero);
-
-
-        for (int i = 0; i < numerosEscolhidos.size() ; i++) numerosEscolhidos.add(numerosEscolhidos.indexOf(i));
-
-
-
-
-        int upperbound = 30;
+        int upperbound = 10;
         Random random = new Random();
         numerosAleatorios.add(random.nextInt(upperbound));
 
-        for (int i = 0; i < numerosAleatorios.size(); i++) {
-            for (int j = 0; j < numerosEscolhidos.size(); i++) {
-                if (numerosAleatorios.indexOf(i) == numerosEscolhidos.indexOf(j)) {
-                    System.out.println("Numero incorreto! Tente Novamente! Numero: " + numerosEscolhidos.indexOf(j));
-                    pontos = pontos - 1;
+
+        while (pontos != 0) {
+            for (Integer numerosAleatorio : numerosAleatorios) {
+
+                if (numero != numerosAleatorio) {
+                    --pontos;
+                    System.out.println("Numero incorreto! Tente novamente \nPontuação: " + pontos);
+
+
                 } else {
-                    System.out.println("Parábens! Você acertou! Número: " + numerosEscolhidos.indexOf(j));
-                    pontos = pontos + 1;
+                    ++pontos;
+                    System.out.println("Você acertou! Numero: " + numero + "\nPontuação: " + pontos);
+
                 }
-                System.out.println("Pontuação: " + pontos);
-                jogar();
             }
+            System.out.println("Digite um numero entre 0 e 30: ");
+            numero = sc.nextInt();
+
         }
-
-
 
 
 

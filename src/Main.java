@@ -11,7 +11,12 @@ public class Main {
                 NivelFacil nivelFacil = new NivelFacil();
                 nivelFacil.jogar();
             }
-            opcao = sc.nextInt();
+            if (sc.hasNextInt()){
+                opcao = sc.nextInt();
+            } else {
+                opcao = 0;
+            }
+
         }
 
     }
