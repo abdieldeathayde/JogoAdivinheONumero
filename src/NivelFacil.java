@@ -8,9 +8,12 @@ public class NivelFacil {
 
     void jogar() {
         ArrayList<Integer> numerosAleatorios = new ArrayList<>();
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite um numero entre 0 e 30: ");
         int numero = sc.nextInt();
+
+
 
         int upperbound = 10;
         Random random = new Random();
@@ -34,11 +37,13 @@ public class NivelFacil {
             System.out.println("Digite um numero entre 0 e 30: ");
             numero = sc.nextInt();
 
+            if (numero != 0) {
+                jogar();
+            } else {
+                System.out.println("Encerrando jogo!");
+            }
+
         }
-
-
-
-
 
     }
 
