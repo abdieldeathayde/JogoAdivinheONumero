@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JogoAdivinheONumero:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JogoAdivinheONumero_jar</output-path>
+    <root id="archive" name="JogoAdivinheONumero.jar">
+      <element id="module-output" name="JogoAdivinheONumero" />
+    </root>
+  </artifact>
+</component>
