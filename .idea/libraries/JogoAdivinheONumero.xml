@@ -4,6 +4,9 @@
       <root url="jar://$PROJECT_DIR$/out/artifacts/JogoAdivinheONumero_jar/JogoAdivinheONumero.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/JogoAdivinheONumero_jar/JogoAdivinheONumero.jar!/" />
+      <root url="file://$PROJECT_DIR$/src/META-INF" />
+    </SOURCES>
   </library>
 </component>
